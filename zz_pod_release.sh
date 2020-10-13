@@ -9,7 +9,7 @@ color_end='\033[0m'
 
 echo "===== 开始进入推送Pod到主仓库流程 ====="
 
-#1、动态输入s.version 同步修改podspec文件
+#1、动态输入spec.version 同步修改podspec文件
 podspec='ZZScrollView.podspec'
 
 #2 tag的列举 &输入 &校验
@@ -46,7 +46,7 @@ echo "打tag完成"
 
 #6、推送到ZZScrollView
 echo "推送到ZZScrollView......"
-pod trunk push $podspec --use-libraries --allow-warnings --verbose
+pod repo push $podspec --use-libraries --allow-warnings --verbose
 
 #7、成功输出
 if [ $? -eq 0 ]
