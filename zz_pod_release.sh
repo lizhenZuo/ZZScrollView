@@ -26,7 +26,7 @@ else
 fi
 
 #3、podspec删除version 新增新的version
-version="s.version='$tag'"
+version="spec.version='$tag'"
 gsed -i '3 d' $podspec
 gsed -i "2a $version" $podspec
 
@@ -46,7 +46,7 @@ echo "打tag完成"
 
 #6、推送到ZZScrollView
 echo "推送到ZZScrollView......"
-pod repo push $podspec --use-libraries --allow-warnings --verbose
+pod trunk push $podspec --use-libraries --allow-warnings --verbose
 
 #7、成功输出
 if [ $? -eq 0 ]
