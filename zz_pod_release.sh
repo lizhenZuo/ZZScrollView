@@ -45,8 +45,8 @@ git push origin "$tag"
 echo "打tag完成"
 
 #6、推送到ZZScrollView
-echo "推送到lizhenZuo......"
-pod repo push lizhenZuo $podspec --use-libraries --allow-warnings --verbose
+echo "推送到ZZScrollView......"
+pod repo push $podspec --use-libraries --allow-warnings --verbose
 
 #7、成功输出
 if [ $? -eq 0 ]
