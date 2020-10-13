@@ -35,7 +35,7 @@ echo "提交代码中......"
 read -p "输入提交信息:" remark
 git add -A .
 git commit -m "$remark"
-git push origin
+git push origin main
 echo "提交完成......"
 
 #5、打tag
@@ -46,7 +46,7 @@ echo "打tag完成"
 
 #6、推送到ZZScrollView
 echo "推送到ZZScrollView......"
-pod repo push $podspec --use-libraries --allow-warnings --verbose
+pod repo push ZZScrollView.podspec --use-libraries --allow-warnings --verbose
 
 #7、成功输出
 if [ $? -eq 0 ]

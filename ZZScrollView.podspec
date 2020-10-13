@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |spec|
-spec.version='1.0.11'
+spec.version='1.0.12'
   spec.summary      = "infinite scrollview."
-
+  spec.name         = "ZZScrollView"
   spec.description  = <<-DESC
                    一个可以无限循环的scrollview，可以显示图片或者普通的view
                    DESC
