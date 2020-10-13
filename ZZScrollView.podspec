@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |spec|
-spec.version='1.0.10'
+spec.version='1.0.11'
   spec.summary      = "infinite scrollview."
 
   spec.description  = <<-DESC
