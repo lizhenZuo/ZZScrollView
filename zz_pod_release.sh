@@ -46,7 +46,7 @@ echo "打tag完成"
 
 #6、推送到ZZScrollView
 echo "推送到ZZScrollView......"
-pod repo push ZZScrollView.podspec --use-libraries --allow-warnings --verbose
+pod trunk push ZZScrollView.podspec --use-libraries --allow-warnings --verbose
 
 #7、成功输出
 if [ $? -eq 0 ]
