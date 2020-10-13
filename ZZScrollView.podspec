@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 s.version='1.0.5'
   spec.name         = "ZZScrollView"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.6"
   spec.summary      = "infinite scrollview."
 
   spec.description  = <<-DESC
